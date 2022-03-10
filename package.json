@@ -1,0 +1,19 @@
+{
+  "name": "github-io",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "clear": "rm -rf dist && rm -rf .cache",
+    "dev": "yarn clear && parcel src/*.html",
+    "build": "yarn clear && rm -rf docs && parcel build src/*.html -d docs --public-url '.'"
+  },
+  "author": "git-gen",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "gsap": "^3.9.1"
+  }
+}
